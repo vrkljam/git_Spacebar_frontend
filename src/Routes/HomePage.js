@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 function HomePage(props) {
     console.log(props)
     const navigate=useNavigate()
@@ -26,7 +26,7 @@ function HomePage(props) {
   
     return (
         <div className="post-home">
-                <img class="profile-pic-home" src={user?.profilePic}  />
+                <img class="profile-pic-home" src={user?.profilePic} alt="" />
             <h2>{user?.username}</h2>
       {/* update user stuff added here */}
         <form className='form form-profile' onSubmit={handleSubmit}>

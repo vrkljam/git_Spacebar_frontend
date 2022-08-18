@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
+// useEffect,
 import {Link} from 'react-router-dom';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import {useNavigate} from 'react-router';
 import '../index.css'
-import Header from '../Components/Header'
+// import Header from '../Components/Header'
 // const useSignedIn = () => {
 //     const getSignedIn = () => {
 //         console.log('getSignedIn is firing!')

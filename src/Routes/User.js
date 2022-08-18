@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Post.css'
 
 function User(props) {
@@ -9,7 +9,7 @@ function User(props) {
         return props.users.map((user) => (
                 <div key={user._id} className='user'>
                         <h3>{user.username}</h3>
-                        <img src={user.profilePic} />
+                        <img src={user.profilePic} alt="user profile picture" />
                         {/* { user.following.map((follow => {
                             return(
                                 <div>

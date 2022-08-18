@@ -1,9 +1,10 @@
 import {useEffect, useState} from "react";
-import {BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter} from "react-router-dom";
+import {BrowserRouter as  Routes, Route} from "react-router-dom";
+// Router,, Navigate, BrowserRouter
 import Post from "../Routes/Post";
 import User from "../Routes/User";
-import Sidebar from "./Sidebar";
-import News from "../Routes/News";
+// import Sidebar from "./Sidebar";
+// import News from "../Routes/News";
 import NewAccount from "../Routes/NewAccount";
 import HomePage from "../Routes/HomePage";
 function Main() {

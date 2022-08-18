@@ -23,7 +23,7 @@ function Events() {
                         <div className="card-events">
                         <div>
                         <div className='card_header-events'>
-                        <img src={data.images[0].url} className="card-image-events" width="210"></img>
+                        <img src={data.images[0].url} className="card-image-events" width="210" alt=""></img>
                         </div>
                         <h4>{data.name}</h4>
                         <p>Type: {data.type}</p>

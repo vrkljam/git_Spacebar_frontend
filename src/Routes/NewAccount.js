@@ -9,7 +9,7 @@ function NewAccount(props) {
               password:'',
              }
       const [formState, setFormState]=useState(initialState);
-      const [dbCheck, setDbCheck] = useState('')
+      // const [dbCheck, setDbCheck] = useState('')
       const navigate =useNavigate()
       const handleChange = event =>{
               setFormState({...formState,[event.target.id]:event.target.value});
@@ -73,12 +73,12 @@ function NewAccount(props) {
 export default NewAccount
 //adding password confirmation
 // onSubmit={formState.password===formState.passwordConfirm? handleSubmit: ""
-{/* <label 
+/* <label 
 htmlFor="passwordConfirm">Confirm password: </label>
 <input
 type="password"
 id="passwordConfirm"
 onChange={handleChange}
 value={formState.passwordConfirm}
-/> */}
-{/* <p>{formState.password===formState.passwordConfirm?"Confirmed" : "Retry"}</p> */}
+/> */
+/* <p>{formState.password===formState.passwordConfirm?"Confirmed" : "Retry"}</p> */
