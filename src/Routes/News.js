@@ -25,7 +25,7 @@ function News() {
                         <div className="card">
                         <div>
                         <div className='card_header'>
-                        <img src={data.urlToImage} className="card-image" width="210" alt="card-image"></img>
+                        <img src={data.urlToImage} className="card-image" width="210" alt="card"></img>
                         </div>
                         <h4>{data.title}</h4>
                         <p>{data.description}</p>

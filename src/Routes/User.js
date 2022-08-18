@@ -9,7 +9,7 @@ function User(props) {
         return props.users.map((user) => (
                 <div key={user._id} className='user'>
                         <h3>{user.username}</h3>
-                        <img src={user.profilePic} alt="user profile picture" />
+                        <img src={user.profilePic} alt="user profile" />
                         {/* { user.following.map((follow => {
                             return(
                                 <div>
