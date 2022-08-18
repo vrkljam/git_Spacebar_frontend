@@ -10,7 +10,8 @@ import HomePage from "../Routes/HomePage";
 function Main() {
     
     
-    const postURL = 'https://social-media-appp-api.herokuapp.com/posts/'
+    const postURL = 'https://famous-bublanina-445a44.netlify.app/posts/'
+    // const postURL = 'https://social-media-appp-api.herokuapp.com/posts/'
     const [posts, setPosts] = useState(null)
     const getPosts = () => {
         fetch(postURL)
@@ -70,7 +71,8 @@ function Main() {
     useEffect(() => getPosts(), [])
     
     
-    const userURL = 'https://social-media-appp-api.herokuapp.com/users/'
+    const userURL = 'https://famous-bublanina-445a44.netlify.app//users/'
+    // const userURL = 'https://social-media-appp-api.herokuapp.com/users/'
     const [users, setUsers] = useState(null)
     const getUsers = () => {
         fetch(userURL)
