@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {BrowserRouter as  Routes, Route} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 // Router,, Navigate, BrowserRouter
 import Post from "../Routes/Post";
 import User from "../Routes/User";
