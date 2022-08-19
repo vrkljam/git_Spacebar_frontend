@@ -21,6 +21,17 @@ code {
   background: white;
   color: black;
 }
+.newform {
+  
+  border: 2px solid rgb(49, 45, 38);
+  margin-left: 450px;
+  margin-top: 200px;
+  max-width: 300px;
+  text-align: left;
+  padding: 80px;
+  background: white;
+  color: black;
+}
 .form input {
   width:100%;
   padding: 12px 20px;

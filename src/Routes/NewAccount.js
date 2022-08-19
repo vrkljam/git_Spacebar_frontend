@@ -35,7 +35,7 @@ function NewAccount(props) {
   return (
    
     <div>
-        <form className='form' onSubmit={handleSubmit}>
+        <form className='newform' onSubmit={handleSubmit}>
             
             <label htmlFor="username">Username: </label>
             <input 

@@ -71,7 +71,7 @@ function Main() {
     useEffect(() => getPosts(), [])
     
     
-    const userURL = 'https://famous-bublanina-445a44.netlify.app//users/'
+    const userURL = 'https://famous-bublanina-445a44.netlify.app/users/'
     // const userURL = 'https://social-media-appp-api.herokuapp.com/users/'
     const [users, setUsers] = useState(null)
     const getUsers = () => {
