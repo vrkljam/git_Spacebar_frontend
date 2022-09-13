@@ -7,10 +7,11 @@ import User from "../Routes/User";
 // import News from "../Routes/News";
 import NewAccount from "../Routes/NewAccount";
 import HomePage from "../Routes/HomePage";
+
 function Main() {
     
     
-    const postURL = 'https://famous-bublanina-445a44.netlify.app/posts/'
+    const postURL = 'https://git.heroku.com/socappbkend.git'
     // const postURL = 'https://social-media-appp-api.herokuapp.com/posts/'
     const [posts, setPosts] = useState(null)
     const getPosts = () => {
@@ -71,7 +72,7 @@ function Main() {
     useEffect(() => getPosts(), [])
     
     
-    const userURL = 'https://famous-bublanina-445a44.netlify.app/users/'
+    const userURL = 'https://git.heroku.com/socappbkend.git'
     // const userURL = 'https://social-media-appp-api.herokuapp.com/users/'
     const [users, setUsers] = useState(null)
     const getUsers = () => {
