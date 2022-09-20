@@ -37,7 +37,8 @@ function LogIn() {
     const handleSubmit = async (e) => {
         console.log('handleSubmit firing!')
         e.preventDefault()
-        await fetch('https://socappbkend.herokuapp.com/users/signin', {
+        // await fetch('https://socappbkend.herokuapp.com/users/signin', {
+        await fetch('http://localhost:4000/users/signin', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'

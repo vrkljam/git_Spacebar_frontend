@@ -61,7 +61,7 @@ code {
   color:red;
 }
 label, button, input, p {
-  color: black;
+  /* color: black; */
 }
 .signin {
   color: red;

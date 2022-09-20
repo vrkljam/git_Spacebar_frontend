@@ -1,6 +1,5 @@
-// import {useState, useEffect} from 'react';
+import React from 'react';
 import { Routes, Route, Navigate} from 'react-router-dom';
-// Router, BrowserRouter,
 import Header from './Components/Header';
 import Main from './Components/Main';
 import Sidebar from './Components/Sidebar';
@@ -8,8 +7,7 @@ import News from './Routes/News';
 import Events from './Routes/Events';
 import './App.css';
 import LogIn from './Routes/LogIn';
-// import NewAccount from './Routes/NewAccount';
-// import AppPage from './Components/AppPage';
+
 function App() {
   
   if(!sessionStorage.signedIn) {
