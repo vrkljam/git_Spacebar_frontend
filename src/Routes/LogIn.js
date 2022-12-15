@@ -23,7 +23,7 @@ import '../index.css'
 function LogIn() {
     const [formState, setFormState] = useState({
         username: '', 
-        password: ''
+        password: '',
     })
    
     
@@ -32,7 +32,7 @@ function LogIn() {
         setFormState({ ...formState, [e.target.name]: e.target.value })
     }
         
-    const [msg, setMsg] = useState()
+    const [msg, setMsg] = useState('')
     const navigate = useNavigate()
     const handleSubmit = async (e) => {
         console.log('handleSubmit firing!')

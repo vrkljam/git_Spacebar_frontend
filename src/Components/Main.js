@@ -94,7 +94,7 @@ function Main() {
         getUsers()
     }
     const updated = async (used, id) => {
-        await fetch (`${userURL}${id}`, {
+        await fetch (`${userURL}/s${id}`, {
             method: 'put',
             headers: {
                 'Content-Type': 'application/json'

@@ -132,3 +132,8 @@ label, button, input, p {
   font-style:normal;
   
 }
+
+.newAccount-div {
+  color: red;
+  font:bold;
+}

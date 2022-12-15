@@ -9,9 +9,11 @@ function NewAccount(props) {
               profilePic:'', 
               password:'',
              }
+
       const [formState, setFormState]=useState(initialState);
       // const [dbCheck, setDbCheck] = useState('')
       const navigate =useNavigate()
+
       const handleChange = event =>{
               setFormState({...formState,[event.target.id]:event.target.value});
       }
@@ -19,7 +21,7 @@ function NewAccount(props) {
               event.preventDefault();
               props.createUser(formState)
               setFormState(initialState)
-              navigate('/signin')
+              navigate('/users/:id')
               //fetch to retrieve from db with get (backend)
               // if check username ====username && formdata. pasword ==== password in db){navigate()}
               // const userURL = "http://localhost:4000/users/";
@@ -35,9 +37,9 @@ function NewAccount(props) {
       }
   return (
    
-    <div>
+    <div >
         <form className='newform' onSubmit={handleSubmit}>
-            
+             <p className='newAccount-div'>Create Account</p>
             <label htmlFor="username">Username: </label>
             <input 
                 id="username" 
