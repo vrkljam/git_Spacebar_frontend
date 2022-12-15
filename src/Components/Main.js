@@ -11,9 +11,11 @@ import HomePage from "../Routes/HomePage";
 function Main() {
     
     
-    const postURL = 'http://localhost:4000/posts/'
+    // const postURL = 'http://localhost:4000/posts/'
     // const postURL = 'https://socappbkend.herokuapp.com/posts/'
     // const postURL = 'https://social-media-appp-api.herokuapp.com/posts/'
+    const postURL = 'https://spacebarback.onrender.com/posts/'
+
     const [posts, setPosts] = useState(null)
     const getPosts = () => {
         fetch(postURL)
@@ -73,9 +75,11 @@ function Main() {
     useEffect(() => getPosts(), [])
     
     
-    const userURL = 'http://localhost:4000/users/'
+    // const userURL = 'http://localhost:4000/users/'
     // const userURL = 'https://socappbkend.herokuapp.com/users/'
     // const userURL = 'https://social-media-appp-api.herokuapp.com/users/'
+    const userURL = 'https://spacebarback.onrender.com/users/'
+
     const [users, setUsers] = useState(null)
     const getUsers = () => {
         fetch(userURL)
