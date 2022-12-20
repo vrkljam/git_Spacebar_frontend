@@ -1,20 +1,19 @@
 import {useEffect, useState} from "react";
-import { Routes, Route} from "react-router-dom";
-// Router,, Navigate, BrowserRouter
+import {BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter} from "react-router-dom";
 import Post from "../Routes/Post";
 import User from "../Routes/User";
-// import Sidebar from "./Sidebar";
-// import News from "../Routes/News";
+import Sidebar from "./Sidebar";
+import News from "../Routes/News";
 import NewAccount from "../Routes/NewAccount";
 import HomePage from "../Routes/HomePage";
 
 function Main() {
     
     
-    // const postURL = 'http://localhost:4000/posts/'
+    const postURL = 'http://localhost:4000/posts/'
     // const postURL = 'https://socappbkend.herokuapp.com/posts/'
     // const postURL = 'https://social-media-appp-api.herokuapp.com/posts/'
-    const postURL = 'https://spacebarback.onrender.com/posts/'
+    // const postURL = 'https://spacebarback.onrender.com/posts/'
 
     const [posts, setPosts] = useState(null)
     const getPosts = () => {
@@ -75,10 +74,10 @@ function Main() {
     useEffect(() => getPosts(), [])
     
     
-    // const userURL = 'http://localhost:4000/users/'
+    const userURL = 'http://localhost:4000/users/'
     // const userURL = 'https://socappbkend.herokuapp.com/users/'
     // const userURL = 'https://social-media-appp-api.herokuapp.com/users/'
-    const userURL = 'https://spacebarback.onrender.com/users/'
+    // const userURL = 'https://spacebarback.onrender.com/users/'
 
     const [users, setUsers] = useState(null)
     const getUsers = () => {
@@ -98,7 +97,7 @@ function Main() {
         getUsers()
     }
     const updated = async (used, id) => {
-        await fetch (`${userURL}/s${id}`, {
+        await fetch (`${userURL}${id}`, {
             method: 'put',
             headers: {
                 'Content-Type': 'application/json'

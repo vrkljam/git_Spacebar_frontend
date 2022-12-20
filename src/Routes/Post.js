@@ -1,9 +1,8 @@
-import {useState} from 'react';
-// , useEffect
-import {Link} from 'react-router-dom';
-// , useParams
-// import { FaBeer, AiOutlineSend } from 'react-icons/fa';
+import {useState, useEffect} from 'react';
+import {Link, useParams} from 'react-router-dom';
+import { FaBeer, AiOutlineSend } from 'react-icons/fa';
 import './Post.css';
+
 function Post(props) {
     const [newForm, setNewForm] = useState({
         userId: '',

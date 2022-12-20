@@ -1,10 +1,10 @@
-import React, { useState} from 'react';
-// useEffect,
+import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {useNavigate} from 'react-router';
 import '../index.css'
-// import Header from '../Components/Header'
+import Header from '../Components/Header'
+
 // const useSignedIn = () => {
 //     const getSignedIn = () => {
 //         console.log('getSignedIn is firing!')
@@ -28,18 +28,20 @@ function LogIn() {
    
     
     const handleChange = (e) => {
+        e.preventDefault()
         console.log('handleChange firing!')
         setFormState({ ...formState, [e.target.name]: e.target.value })
     }
         
-    const [msg, setMsg] = useState('')
+    const [msg, setMsg] = useState()
     const navigate = useNavigate()
+
     const handleSubmit = async (e) => {
         console.log('handleSubmit firing!')
         e.preventDefault()
         // await fetch('https://socappbkend.herokuapp.com/users/signin', {
-        // await fetch('http://localhost:4000/users/signin', {
-        await fetch('https://spacebarback.onrender.com/users/signin', {
+        await fetch('http://localhost:4000/users/signin', {
+        // await fetch('https://spacebarback.onrender.com/users/signin', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
@@ -63,7 +65,9 @@ function LogIn() {
         setFormState({
             username: '', 
             password: ''
-        })   
+        })
+        
+        
     }
     return (
         <div>

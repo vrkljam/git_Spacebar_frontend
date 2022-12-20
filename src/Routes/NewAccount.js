@@ -11,7 +11,7 @@ function NewAccount(props) {
              }
 
       const [formState, setFormState]=useState(initialState);
-      // const [dbCheck, setDbCheck] = useState('')
+      const [dbCheck, setDbCheck] = useState('')
       const navigate =useNavigate()
 
       const handleChange = event =>{
@@ -39,7 +39,7 @@ function NewAccount(props) {
    
     <div >
         <form className='newform' onSubmit={handleSubmit}>
-             <p className='newAccount-div'>Create Account</p>
+             {/* <p className='newAccount-div'>Create Account</p> */}
             <label htmlFor="username">Username: </label>
             <input 
                 id="username" 
